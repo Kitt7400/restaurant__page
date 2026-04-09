@@ -1,469 +1,482 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>KK Restaurant</title>
-    <!--bootstrap cdn-->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
 
-    <!--google fonts-->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
-    
-    <!-- aos library-->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" integrity="sha512-1cK78a1o+ht2JcaW6g8OXYwqpev9+6GqOkz9xmBN9iUUhIndKtxwILGWYOSibOKjLsEdjyjZvYDq/cZwNeak0w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    
-    <!--font awesome-->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    
-    <!--style-->
-    <link rel="stylesheet" href="style.css">
-  </head>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>KK Restaurant</title>
+  <!--bootstrap cdn-->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    crossorigin="anonymous">
 
-  <body>
-    <!--navbar-->
-    <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+  <!--google fonts-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Inter:wght@300;400;500;600&display=swap"
+    rel="stylesheet">
+
+  <!-- aos library-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css"
+    integrity="sha512-1cK78a1o+ht2JcaW6g8OXYwqpev9+6GqOkz9xmBN9iUUhIndKtxwILGWYOSibOKjLsEdjyjZvYDq/cZwNeak0w=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!--font awesome-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!--style-->
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <!--navbar-->
+  <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="#home">KK Restaurant</a>
+      <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse"
+        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+        aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link nav-route active" aria-current="page" href="#home">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link nav-route" href="#gallery">Gallery</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link nav-route" href="#reservation">Reservation</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link nav-route" href="#contact">Contact</a>
+          </li>
+          <li class="nav-item ms-lg-3 mt-2 mt-lg-0">
+            <a class="btn btn-primary nav-route" href="#reservation">Reserve a table</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Main Content for Routing -->
+  <main id="app-content">
+
+    <!-- Home Section -->
+    <section id="home" class="page-section hero active-section">
       <div class="container">
-        <a class="navbar-brand" href="#home">KK Restaurant</a>
-        <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-            <li class="nav-item">
-              <a class="nav-link nav-route active" aria-current="page" href="#home">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link nav-route" href="#gallery">Gallery</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link nav-route" href="#reservation">Reservation</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link nav-route" href="#contact">Contact</a>
-            </li>
-            <li class="nav-item ms-lg-3 mt-2 mt-lg-0">
-              <a class="btn btn-primary nav-route" href="#reservation">Reserve a table</a>
-            </li>
+        <div class="row align-items-center hero-content">
+          <div class="col-lg-6 z-2" data-aos="fade-right" data-aos-duration="1000">
+            <h1 class="hero-heading">Savor the Taste of <span class="text-gold">Elegance</span></h1>
+            <p class="lead mb-4 description-text">
+              Experience fine dining at its best with our curated menu of exquisite dishes
+              prepared by world-class chefs using the freshest ingredients.
+            </p>
+            <div class="d-flex flex-wrap gap-3">
+              <a href="#reservation" class="btn btn-primary nav-route">Reserve a table</a>
+              <a href="#gallery" class="btn btn-outline-primary nav-route">View Gallery</a>
+            </div>
+          </div>
+          <div class="col-lg-6" data-aos="fade-left" data-aos-duration="1000">
+            <div class="hero-image">
+              <img src="images/hero-pizza.svg" alt="Gourmet Pizza">
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="page-section section-padding d-none">
+      <div class="container">
+        <div class="text-center mb-5" data-aos="fade-up">
+          <h6 class="text-gold fw-bold text-uppercase tracking-wide">Our Masterpieces</h6>
+          <h2 class="display-4 fw-bold">Food Gallery</h2>
+          <div class="divider mx-auto"></div>
+        </div>
+        <div class="row g-4 justify-content-center">
+          <!-- Gallery Item 1 -->
+          <div class="col-lg-4 col-md-6" data-aos="zoom-in" data-aos-delay="100">
+            <div class="gallery-item">
+              <img src="images/menu/pizza.png" alt="Signature Pizza" class="img-fluid rounded shadow hover-zoom">
+              <div class="gallery-overlay">
+                <h4>Signature Pizza</h4>
+              </div>
+            </div>
+          </div>
+          <!-- Gallery Item 2 -->
+          <div class="col-lg-4 col-md-6" data-aos="zoom-in" data-aos-delay="200">
+            <div class="gallery-item">
+              <img src="images/menu/pasta.png" alt="Classic Pasta" class="img-fluid rounded shadow hover-zoom">
+              <div class="gallery-overlay">
+                <h4>Classic Pasta</h4>
+              </div>
+            </div>
+          </div>
+          <!-- Gallery Item 3 -->
+          <div class="col-lg-4 col-md-6" data-aos="zoom-in" data-aos-delay="300">
+            <div class="gallery-item">
+              <img src="images/menu/burger.png" alt="Premium Burger" class="img-fluid rounded shadow hover-zoom">
+              <div class="gallery-overlay">
+                <h4>Premium Burger</h4>
+              </div>
+            </div>
+          </div>
+          <!-- Gallery Item 4 -->
+          <div class="col-lg-4 col-md-6" data-aos="zoom-in" data-aos-delay="100">
+            <div class="gallery-item">
+              <img src="images/menu/salad.png" alt="Fresh Salad" class="img-fluid rounded shadow hover-zoom">
+              <div class="gallery-overlay">
+                <h4>Fresh Salad</h4>
+              </div>
+            </div>
+          </div>
+          <!-- Gallery Item 5 -->
+          <div class="col-lg-4 col-md-6" data-aos="zoom-in" data-aos-delay="200">
+            <div class="gallery-item">
+              <img src="images/menu/salmon.png" alt="Grilled Salmon" class="img-fluid rounded shadow hover-zoom">
+              <div class="gallery-overlay">
+                <h4>Grilled Salmon</h4>
+              </div>
+            </div>
+          </div>
+          <!-- Gallery Item 6 -->
+          <div class="col-lg-4 col-md-6" data-aos="zoom-in" data-aos-delay="300">
+            <div class="gallery-item">
+              <img src="images/menu/cake.png" alt="Decadent Dessert" class="img-fluid rounded shadow hover-zoom">
+              <div class="gallery-overlay">
+                <h4>Decadent Dessert</h4>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Reservation Section -->
+    <section id="reservation" class="page-section section-padding bg-light-brown d-none">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-lg-5 mb-5 mb-lg-0" data-aos="fade-right">
+            <h6 class="text-gold fw-bold text-uppercase tracking-wide">Book a Table</h6>
+            <h2 class="display-4 fw-bold mb-4">Make a Reservation</h2>
+            <p class="mb-4">Secure your spot at KK Restaurant for an unforgettable culinary experience. Whether it's a
+              romantic dinner, family gathering, or business meeting, we ensure top-notch service and ambiance.</p>
+            <div class="contact-info mt-4">
+              <div class="d-flex align-items-center mb-4">
+                <div class="icon-box"><i class="fas fa-phone"></i></div>
+                <div class="ms-3">
+                  <h6 class="mb-0 fw-bold">Call Us</h6>
+                  <p class="mb-0 text-muted">+1 234 567 890</p>
+                </div>
+              </div>
+              <div class="d-flex align-items-center">
+                <div class="icon-box"><i class="far fa-clock"></i></div>
+                <div class="ms-3">
+                  <h6 class="mb-0 fw-bold">Opening Hours</h6>
+                  <p class="mb-0 text-muted">Mon - Sun: 10:00 AM - 11:00 PM</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-7" data-aos="fade-left">
+            <div class="reservation-form form-card p-5 bg-white rounded shadow-lg">
+              <form id="bookingForm">
+                <div class="row g-3">
+                  <div class="col-md-6">
+                    <div class="form-floating">
+                      <input type="text" class="form-control" id="name" placeholder="Your Name" required>
+                      <label for="name">Your Name</label>
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="form-floating">
+                      <input type="email" class="form-control" id="email" placeholder="Your Email" required>
+                      <label for="email">Your Email</label>
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="form-floating">
+                      <input type="date" class="form-control" id="date" required>
+                      <label for="date">Date</label>
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="form-floating">
+                      <select class="form-select" id="time" required>
+                        <option value="" selected disabled>Select Time</option>
+                        <option value="18:00">18:00</option>
+                        <option value="19:00">19:00</option>
+                        <option value="20:00">20:00</option>
+                        <option value="21:00">21:00</option>
+                      </select>
+                      <label for="time">Time</label>
+                    </div>
+                  </div>
+                  <div class="col-12">
+                    <div class="form-floating">
+                      <select class="form-select" id="guests" required>
+                        <option value="1">1 Person</option>
+                        <option value="2" selected>2 People</option>
+                        <option value="3">3 People</option>
+                        <option value="4">4 People</option>
+                        <option value="5+">5+ People</option>
+                      </select>
+                      <label for="guests">No. of Guests</label>
+                    </div>
+                  </div>
+                  <div class="col-12 mt-4">
+                    <button class="btn btn-primary w-100 py-3 submit-btn" type="submit">Book Table Now</button>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="page-section section-padding d-none">
+      <div class="container">
+        <div class="text-center mb-5" data-aos="fade-up">
+          <h6 class="text-gold fw-bold text-uppercase tracking-wide">Get in Touch</h6>
+          <h2 class="display-4 fw-bold">Contact Us</h2>
+          <div class="divider mx-auto"></div>
+        </div>
+
+        <div class="row g-5">
+          <div class="col-lg-4" data-aos="fade-up" data-aos-delay="100">
+            <div class="contact-card p-4 rounded shadow text-center h-100 position-relative glass-effect">
+              <div class="contact-icon mx-auto mb-4"><i class="fas fa-map-marker-alt"></i></div>
+              <h4 class="fw-bold mb-3">Our Location</h4>
+              <p class="text-muted">123 Culinary Boulevard,<br>Food City, FC 90210</p>
+            </div>
+          </div>
+          <div class="col-lg-4" data-aos="fade-up" data-aos-delay="200">
+            <div class="contact-card p-4 rounded shadow text-center h-100 position-relative glass-effect">
+              <div class="contact-icon mx-auto mb-4"><i class="fas fa-envelope"></i></div>
+              <h4 class="fw-bold mb-3">Email Us</h4>
+              <p class="text-muted">info@kkrestaurant.com<br>support@kkrestaurant.com</p>
+            </div>
+          </div>
+          <div class="col-lg-4" data-aos="fade-up" data-aos-delay="300">
+            <div class="contact-card p-4 rounded shadow text-center h-100 position-relative glass-effect">
+              <div class="contact-icon mx-auto mb-4"><i class="fas fa-phone-alt"></i></div>
+              <h4 class="fw-bold mb-3">Call Us</h4>
+              <p class="text-muted">+1 234 567 890<br>+1 098 765 432</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="row mt-5">
+          <div class="col-12" data-aos="fade-up">
+            <div class="form-card p-4 p-md-5 bg-white rounded shadow glass-effect">
+              <h3 class="fw-bold mb-4 text-center">Send Us a Message</h3>
+              <form id="contactForm">
+                <div class="row g-3">
+                  <div class="col-md-6">
+                    <div class="form-floating">
+                      <input type="text" class="form-control" id="contactName" placeholder="Your Name" required>
+                      <label for="contactName">Your Name</label>
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="form-floating">
+                      <input type="email" class="form-control" id="contactEmail" placeholder="Your Email" required>
+                      <label for="contactEmail">Your Email</label>
+                    </div>
+                  </div>
+                  <div class="col-12">
+                    <div class="form-floating">
+                      <input type="text" class="form-control" id="contactSubject" placeholder="Subject" required>
+                      <label for="contactSubject">Subject</label>
+                    </div>
+                  </div>
+                  <div class="col-12">
+                    <div class="form-floating">
+                      <textarea class="form-control py-3 px-4" id="contactMessage" style="height: 150px"
+                        placeholder="Message" required></textarea>
+                      <label for="contactMessage" class="px-4">Message</label>
+                    </div>
+                  </div>
+                  <div class="col-12 text-center mt-4">
+                    <button class="btn btn-primary px-5 py-3" type="submit">Send Message</button>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-charcoal text-white py-5 mt-auto">
+    <div class="container">
+      <div class="row g-4">
+        <div class="col-lg-4 col-md-6">
+          <h3 class="navbar-brand text-white mb-3" style="font-size: 1.5rem;">KK Restaurant</h3>
+          <p class="text-light-gray mb-4">Savor the elegance with every bite. We bring you the finest culinary
+            experience with a touch of premium luxury.</p>
+          <div class="social-links d-flex gap-3">
+            <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+            <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+          </div>
+        </div>
+        <div class="col-lg-2 col-md-6">
+          <h5 class="text-gold mb-3">Quick Links</h5>
+          <ul class="list-unstyled footer-links">
+            <li><a href="#home" class="nav-route text-decoration-none">Home</a></li>
+            <li><a href="#gallery" class="nav-route text-decoration-none">Gallery</a></li>
+            <li><a href="#reservation" class="nav-route text-decoration-none">Reservation</a></li>
+            <li><a href="#contact" class="nav-route text-decoration-none">Contact</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-3 col-md-6">
+          <h5 class="text-gold mb-3">Contact</h5>
+          <ul class="list-unstyled text-light-gray">
+            <li class="mb-2"><i class="fas fa-map-marker-alt me-2 text-gold"></i> 123 Culinary Blvd</li>
+            <li class="mb-2"><i class="fas fa-phone me-2 text-gold"></i> +1 234 567 890</li>
+            <li class="mb-2"><i class="fas fa-envelope me-2 text-gold"></i> info@kkrestaurant.com</li>
+          </ul>
+        </div>
+        <div class="col-lg-3 col-md-6">
+          <h5 class="text-gold mb-3">Opening Hours</h5>
+          <ul class="list-unstyled text-light-gray">
+            <li class="mb-2 d-flex justify-content-between"><span>Mon - Fri:</span> <span>10AM - 11PM</span></li>
+            <li class="mb-2 d-flex justify-content-between"><span>Saturday:</span> <span>10AM - 12AM</span></li>
+            <li class="mb-2 d-flex justify-content-between"><span>Sunday:</span> <span>10AM - 10PM</span></li>
           </ul>
         </div>
       </div>
-    </nav>
-
-    <!-- Main Content for Routing -->
-    <main id="app-content">
-      
-      <!-- Home Section -->
-      <section id="home" class="page-section hero active-section">
-        <div class="container">
-            <div class="row align-items-center hero-content">
-                <div class="col-lg-6 z-2" data-aos="fade-right" data-aos-duration="1000">
-                    <h1 class="hero-heading">Savor the Taste of <span class="text-gold">Elegance</span></h1>
-                    <p class="lead mb-4 description-text">
-                        Experience fine dining at its best with our curated menu of exquisite dishes
-                        prepared by world-class chefs using the freshest ingredients.
-                    </p>
-                    <div class="d-flex flex-wrap gap-3">
-                        <a href="#reservation" class="btn btn-primary nav-route">Reserve a table</a>
-                        <a href="#gallery" class="btn btn-outline-primary nav-route">View Gallery</a>
-                    </div>
-                </div>
-                <div class="col-lg-6" data-aos="fade-left" data-aos-duration="1000">
-                    <div class="hero-image">
-                        <img src="images/hero-pizza.svg" alt="Gourmet Pizza">
-                        <div class="floating-badge">
-                            <i class="fas fa-star text-gold"></i>
-                            <span>Premium Quality</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-      </section>
-
-      <!-- Gallery Section -->
-      <section id="gallery" class="page-section section-padding d-none">
-        <div class="container">
-          <div class="text-center mb-5" data-aos="fade-up">
-            <h6 class="text-gold fw-bold text-uppercase tracking-wide">Our Masterpieces</h6>
-            <h2 class="display-4 fw-bold">Food Gallery</h2>
-            <div class="divider mx-auto"></div>
-          </div>
-          <div class="row g-4 justify-content-center">
-            <!-- Gallery Item 1 -->
-            <div class="col-lg-4 col-md-6" data-aos="zoom-in" data-aos-delay="100">
-              <div class="gallery-item">
-                <img src="images/menu/pizza.png" alt="Signature Pizza" class="img-fluid rounded shadow hover-zoom">
-                <div class="gallery-overlay">
-                  <h4>Signature Pizza</h4>
-                </div>
-              </div>
-            </div>
-            <!-- Gallery Item 2 -->
-            <div class="col-lg-4 col-md-6" data-aos="zoom-in" data-aos-delay="200">
-              <div class="gallery-item">
-                <img src="images/menu/pasta.png" alt="Classic Pasta" class="img-fluid rounded shadow hover-zoom">
-                <div class="gallery-overlay">
-                  <h4>Classic Pasta</h4>
-                </div>
-              </div>
-            </div>
-            <!-- Gallery Item 3 -->
-            <div class="col-lg-4 col-md-6" data-aos="zoom-in" data-aos-delay="300">
-              <div class="gallery-item">
-                <img src="images/menu/burger.png" alt="Premium Burger" class="img-fluid rounded shadow hover-zoom">
-                <div class="gallery-overlay">
-                  <h4>Premium Burger</h4>
-                </div>
-              </div>
-            </div>
-            <!-- Gallery Item 4 -->
-            <div class="col-lg-4 col-md-6" data-aos="zoom-in" data-aos-delay="100">
-              <div class="gallery-item">
-                <img src="images/menu/salad.png" alt="Fresh Salad" class="img-fluid rounded shadow hover-zoom">
-                <div class="gallery-overlay">
-                  <h4>Fresh Salad</h4>
-                </div>
-              </div>
-            </div>
-            <!-- Gallery Item 5 -->
-            <div class="col-lg-4 col-md-6" data-aos="zoom-in" data-aos-delay="200">
-              <div class="gallery-item">
-                <img src="images/menu/salmon.png" alt="Grilled Salmon" class="img-fluid rounded shadow hover-zoom">
-                <div class="gallery-overlay">
-                  <h4>Grilled Salmon</h4>
-                </div>
-              </div>
-            </div>
-            <!-- Gallery Item 6 -->
-            <div class="col-lg-4 col-md-6" data-aos="zoom-in" data-aos-delay="300">
-              <div class="gallery-item">
-                <img src="images/menu/cake.png" alt="Decadent Dessert" class="img-fluid rounded shadow hover-zoom">
-                <div class="gallery-overlay">
-                  <h4>Decadent Dessert</h4>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- Reservation Section -->
-      <section id="reservation" class="page-section section-padding bg-light-brown d-none">
-        <div class="container">
-          <div class="row align-items-center">
-            <div class="col-lg-5 mb-5 mb-lg-0" data-aos="fade-right">
-              <h6 class="text-gold fw-bold text-uppercase tracking-wide">Book a Table</h6>
-              <h2 class="display-4 fw-bold mb-4">Make a Reservation</h2>
-              <p class="mb-4">Secure your spot at KK Restaurant for an unforgettable culinary experience. Whether it's a romantic dinner, family gathering, or business meeting, we ensure top-notch service and ambiance.</p>
-              <div class="contact-info mt-4">
-                <div class="d-flex align-items-center mb-4">
-                  <div class="icon-box"><i class="fas fa-phone"></i></div>
-                  <div class="ms-3">
-                    <h6 class="mb-0 fw-bold">Call Us</h6>
-                    <p class="mb-0 text-muted">+1 234 567 890</p>
-                  </div>
-                </div>
-                <div class="d-flex align-items-center">
-                  <div class="icon-box"><i class="far fa-clock"></i></div>
-                  <div class="ms-3">
-                    <h6 class="mb-0 fw-bold">Opening Hours</h6>
-                    <p class="mb-0 text-muted">Mon - Sun: 10:00 AM - 11:00 PM</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-lg-7" data-aos="fade-left">
-              <div class="reservation-form form-card p-5 bg-white rounded shadow-lg">
-                <form id="bookingForm">
-                  <div class="row g-3">
-                    <div class="col-md-6">
-                      <div class="form-floating">
-                        <input type="text" class="form-control" id="name" placeholder="Your Name" required>
-                        <label for="name">Your Name</label>
-                      </div>
-                    </div>
-                    <div class="col-md-6">
-                      <div class="form-floating">
-                        <input type="email" class="form-control" id="email" placeholder="Your Email" required>
-                        <label for="email">Your Email</label>
-                      </div>
-                    </div>
-                    <div class="col-md-6">
-                      <div class="form-floating">
-                        <input type="date" class="form-control" id="date" required>
-                        <label for="date">Date</label>
-                      </div>
-                    </div>
-                    <div class="col-md-6">
-                      <div class="form-floating">
-                        <select class="form-select" id="time" required>
-                          <option value="" selected disabled>Select Time</option>
-                          <option value="18:00">18:00</option>
-                          <option value="19:00">19:00</option>
-                          <option value="20:00">20:00</option>
-                          <option value="21:00">21:00</option>
-                        </select>
-                        <label for="time">Time</label>
-                      </div>
-                    </div>
-                    <div class="col-12">
-                      <div class="form-floating">
-                        <select class="form-select" id="guests" required>
-                          <option value="1">1 Person</option>
-                          <option value="2" selected>2 People</option>
-                          <option value="3">3 People</option>
-                          <option value="4">4 People</option>
-                          <option value="5+">5+ People</option>
-                        </select>
-                        <label for="guests">No. of Guests</label>
-                      </div>
-                    </div>
-                    <div class="col-12 mt-4">
-                      <button class="btn btn-primary w-100 py-3 submit-btn" type="submit">Book Table Now</button>
-                    </div>
-                  </div>
-                </form>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- Contact Section -->
-      <section id="contact" class="page-section section-padding d-none">
-        <div class="container">
-          <div class="text-center mb-5" data-aos="fade-up">
-            <h6 class="text-gold fw-bold text-uppercase tracking-wide">Get in Touch</h6>
-            <h2 class="display-4 fw-bold">Contact Us</h2>
-            <div class="divider mx-auto"></div>
-          </div>
-          
-          <div class="row g-5">
-            <div class="col-lg-4" data-aos="fade-up" data-aos-delay="100">
-              <div class="contact-card p-4 rounded shadow text-center h-100 position-relative glass-effect">
-                <div class="contact-icon mx-auto mb-4"><i class="fas fa-map-marker-alt"></i></div>
-                <h4 class="fw-bold mb-3">Our Location</h4>
-                <p class="text-muted">123 Culinary Boulevard,<br>Food City, FC 90210</p>
-              </div>
-            </div>
-            <div class="col-lg-4" data-aos="fade-up" data-aos-delay="200">
-              <div class="contact-card p-4 rounded shadow text-center h-100 position-relative glass-effect">
-                <div class="contact-icon mx-auto mb-4"><i class="fas fa-envelope"></i></div>
-                <h4 class="fw-bold mb-3">Email Us</h4>
-                <p class="text-muted">info@kkrestaurant.com<br>support@kkrestaurant.com</p>
-              </div>
-            </div>
-            <div class="col-lg-4" data-aos="fade-up" data-aos-delay="300">
-              <div class="contact-card p-4 rounded shadow text-center h-100 position-relative glass-effect">
-                <div class="contact-icon mx-auto mb-4"><i class="fas fa-phone-alt"></i></div>
-                <h4 class="fw-bold mb-3">Call Us</h4>
-                <p class="text-muted">+1 234 567 890<br>+1 098 765 432</p>
-              </div>
-            </div>
-          </div>
-
-          <div class="row mt-5">
-            <div class="col-12" data-aos="fade-up">
-              <div class="form-card p-4 p-md-5 bg-white rounded shadow glass-effect">
-                <h3 class="fw-bold mb-4 text-center">Send Us a Message</h3>
-                <form id="contactForm">
-                  <div class="row g-3">
-                    <div class="col-md-6">
-                      <div class="form-floating">
-                        <input type="text" class="form-control" id="contactName" placeholder="Your Name" required>
-                        <label for="contactName">Your Name</label>
-                      </div>
-                    </div>
-                    <div class="col-md-6">
-                      <div class="form-floating">
-                        <input type="email" class="form-control" id="contactEmail" placeholder="Your Email" required>
-                        <label for="contactEmail">Your Email</label>
-                      </div>
-                    </div>
-                    <div class="col-12">
-                      <div class="form-floating">
-                        <input type="text" class="form-control" id="contactSubject" placeholder="Subject" required>
-                        <label for="contactSubject">Subject</label>
-                      </div>
-                    </div>
-                    <div class="col-12">
-                      <div class="form-floating">
-                        <textarea class="form-control py-3 px-4" id="contactMessage" style="height: 150px" placeholder="Message" required></textarea>
-                        <label for="contactMessage" class="px-4">Message</label>
-                      </div>
-                    </div>
-                    <div class="col-12 text-center mt-4">
-                      <button class="btn btn-primary px-5 py-3" type="submit">Send Message</button>
-                    </div>
-                  </div>
-                </form>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-    </main>
-
-    <!-- Footer -->
-    <footer class="bg-charcoal text-white py-5 mt-auto">
-      <div class="container">
-        <div class="row g-4">
-          <div class="col-lg-4 col-md-6">
-            <h3 class="navbar-brand text-white mb-3" style="font-size: 1.5rem;">KK Restaurant</h3>
-            <p class="text-light-gray mb-4">Savor the elegance with every bite. We bring you the finest culinary experience with a touch of premium luxury.</p>
-            <div class="social-links d-flex gap-3">
-              <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
-              <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
-              <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
-            </div>
-          </div>
-          <div class="col-lg-2 col-md-6">
-            <h5 class="text-gold mb-3">Quick Links</h5>
-            <ul class="list-unstyled footer-links">
-              <li><a href="#home" class="nav-route text-decoration-none">Home</a></li>
-              <li><a href="#gallery" class="nav-route text-decoration-none">Gallery</a></li>
-              <li><a href="#reservation" class="nav-route text-decoration-none">Reservation</a></li>
-              <li><a href="#contact" class="nav-route text-decoration-none">Contact</a></li>
-            </ul>
-          </div>
-          <div class="col-lg-3 col-md-6">
-            <h5 class="text-gold mb-3">Contact</h5>
-            <ul class="list-unstyled text-light-gray">
-              <li class="mb-2"><i class="fas fa-map-marker-alt me-2 text-gold"></i> 123 Culinary Blvd</li>
-              <li class="mb-2"><i class="fas fa-phone me-2 text-gold"></i> +1 234 567 890</li>
-              <li class="mb-2"><i class="fas fa-envelope me-2 text-gold"></i> info@kkrestaurant.com</li>
-            </ul>
-          </div>
-          <div class="col-lg-3 col-md-6">
-            <h5 class="text-gold mb-3">Opening Hours</h5>
-            <ul class="list-unstyled text-light-gray">
-              <li class="mb-2 d-flex justify-content-between"><span>Mon - Fri:</span> <span>10AM - 11PM</span></li>
-              <li class="mb-2 d-flex justify-content-between"><span>Saturday:</span> <span>10AM - 12AM</span></li>
-              <li class="mb-2 d-flex justify-content-between"><span>Sunday:</span> <span>10AM - 10PM</span></li>
-            </ul>
-          </div>
-        </div>
-        <hr class="mt-5 mb-4 border-secondary">
-        <div class="text-center text-light-gray">
-          <p class="mb-0">&copy; 2024 KK Restaurant. All Rights Reserved.</p>
-        </div>
+      <hr class="mt-5 mb-4 border-secondary">
+      <div class="text-center text-light-gray">
+        <p class="mb-0">&copy; 2024 KK Restaurant. All Rights Reserved.</p>
       </div>
-    </footer>
+    </div>
+  </footer>
 
-    <!-- Routing and interactions Script -->
-    <script>
-      // Routing Logic
-      function handleRoute() {
-        let hash = window.location.hash || '#home';
-        
-        // Hide all sections
-        const sections = document.querySelectorAll('.page-section');
-        sections.forEach(sec => {
-          sec.classList.add('d-none');
-          sec.classList.remove('active-section');
-        });
+  <!-- Routing and interactions Script -->
+  <script>
+    // Routing Logic
+    function handleRoute() {
+      let hash = window.location.hash || '#home';
 
-        // Show active section
-        const activeSection = document.querySelector(hash);
-        if(activeSection) {
-          activeSection.classList.remove('d-none');
-          // Add a small delay for animation
+      // Hide all sections
+      const sections = document.querySelectorAll('.page-section');
+      sections.forEach(sec => {
+        sec.classList.add('d-none');
+        sec.classList.remove('active-section');
+      });
+
+      // Show active section
+      const activeSection = document.querySelector(hash);
+      if (activeSection) {
+        activeSection.classList.remove('d-none');
+        // Add a small delay for animation
+        setTimeout(() => {
+          activeSection.classList.add('active-section');
+          if (typeof AOS !== 'undefined') AOS.refresh();
+        }, 50);
+      } else {
+        // fallback to home
+        const homeSec = document.querySelector('#home');
+        if (homeSec) {
+          homeSec.classList.remove('d-none');
           setTimeout(() => {
-            activeSection.classList.add('active-section');
-            if(typeof AOS !== 'undefined') AOS.refresh();
+            homeSec.classList.add('active-section');
+            window.location.hash = '#home';
           }, 50);
-        } else {
-            // fallback to home
-            const homeSec = document.querySelector('#home');
-            if(homeSec) {
-                homeSec.classList.remove('d-none');
-                setTimeout(() => {
-                    homeSec.classList.add('active-section');
-                    window.location.hash = '#home';
-                }, 50);
-            }
         }
-
-        // Update nav links
-        const navLinks = document.querySelectorAll('.navbar-nav .nav-route');
-        navLinks.forEach(link => {
-          link.classList.remove('active');
-          if(link.getAttribute('href') === hash) {
-            link.classList.add('active');
-          }
-        });
-
-        // Close mobile navbar on click
-        const navbarCollapse = document.querySelector('.navbar-collapse');
-        if(navbarCollapse && navbarCollapse.classList.contains('show')) {
-           const bsCollapse = bootstrap.Collapse.getInstance(navbarCollapse);
-           if(bsCollapse) bsCollapse.hide();
-        }
-
-        window.scrollTo(0, 0);
       }
 
-      window.addEventListener('hashchange', handleRoute);
-      window.addEventListener('load', handleRoute);
+      // Update nav links
+      const navLinks = document.querySelectorAll('.navbar-nav .nav-route');
+      navLinks.forEach(link => {
+        link.classList.remove('active');
+        if (link.getAttribute('href') === hash) {
+          link.classList.add('active');
+        }
+      });
 
-      // Navbar scroll effect
-      window.addEventListener('scroll', function(){
-          const navbar = document.querySelector('.navbar');
-          if(window.scrollY > 50){
-              navbar.classList.add('scrolled');
-          }
-          else{
-              navbar.classList.remove('scrolled');
-          }
-      });
-      
-      // Handle form submissions elegantly
-      document.getElementById('bookingForm')?.addEventListener('submit', function(e) {
-          e.preventDefault();
-          const btn = this.querySelector('.submit-btn');
-          const originalText = btn.innerHTML;
-          btn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Booking...';
-          setTimeout(() => {
-              btn.innerHTML = 'Table Booked! <i class="fas fa-check"></i>';
-              btn.classList.replace('btn-primary', 'btn-success');
-              setTimeout(() => {
-                  this.reset();
-                  btn.innerHTML = originalText;
-                  btn.classList.replace('btn-success', 'btn-primary');
-              }, 3000);
-          }, 1500);
-      });
-      document.getElementById('contactForm')?.addEventListener('submit', function(e) {
-          e.preventDefault();
-          const btn = this.querySelector('button[type="submit"]');
-          const originalText = btn.innerHTML;
-          btn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Sending...';
-          setTimeout(() => {
-              btn.innerHTML = 'Message Sent! <i class="fas fa-check"></i>';
-              btn.classList.replace('btn-primary', 'btn-success');
-              setTimeout(() => {
-                  this.reset();
-                  btn.innerHTML = originalText;
-                  btn.classList.replace('btn-success', 'btn-primary');
-              }, 3000);
-          }, 1500);
-      });
-    </script>
-    
-    <!--bootstrap cdn-->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
-    <!--aos library-->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js" integrity="sha512-A7AYk1fGKX6S2SsHywmPkrnzTZHrgiVT7GcQkLGDe2ev0aWb8zejytzS8wjo7PGEXKqJOrjQ4oORtnimIRZBtw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script>
-      // Initialize AOS
-      AOS.init({
-        once: true,
-        offset: 50,
-      });
-    </script>
-  </body>
+      // Close mobile navbar on click
+      const navbarCollapse = document.querySelector('.navbar-collapse');
+      if (navbarCollapse && navbarCollapse.classList.contains('show')) {
+        const bsCollapse = bootstrap.Collapse.getInstance(navbarCollapse);
+        if (bsCollapse) bsCollapse.hide();
+      }
+
+      window.scrollTo(0, 0);
+    }
+
+    window.addEventListener('hashchange', handleRoute);
+    window.addEventListener('load', handleRoute);
+
+    // Navbar scroll effect
+    window.addEventListener('scroll', function () {
+      const navbar = document.querySelector('.navbar');
+      if (window.scrollY > 50) {
+        navbar.classList.add('scrolled');
+      }
+      else {
+        navbar.classList.remove('scrolled');
+      }
+    });
+
+    // Handle form submissions elegantly
+    document.getElementById('bookingForm')?.addEventListener('submit', function (e) {
+      e.preventDefault();
+      const btn = this.querySelector('.submit-btn');
+      const originalText = btn.innerHTML;
+      btn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Booking...';
+      setTimeout(() => {
+        btn.innerHTML = 'Table Booked! <i class="fas fa-check"></i>';
+        btn.classList.replace('btn-primary', 'btn-success');
+        setTimeout(() => {
+          this.reset();
+          btn.innerHTML = originalText;
+          btn.classList.replace('btn-success', 'btn-primary');
+        }, 3000);
+      }, 1500);
+    });
+    document.getElementById('contactForm')?.addEventListener('submit', function (e) {
+      e.preventDefault();
+      const btn = this.querySelector('button[type="submit"]');
+      const originalText = btn.innerHTML;
+      btn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Sending...';
+      setTimeout(() => {
+        btn.innerHTML = 'Message Sent! <i class="fas fa-check"></i>';
+        btn.classList.replace('btn-primary', 'btn-success');
+        setTimeout(() => {
+          this.reset();
+          btn.innerHTML = originalText;
+          btn.classList.replace('btn-success', 'btn-primary');
+        }, 3000);
+      }, 1500);
+    });
+  </script>
+
+  <!--bootstrap cdn-->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    crossorigin="anonymous"></script>
+  <!--aos library-->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"
+    integrity="sha512-A7AYk1fGKX6S2SsHywmPkrnzTZHrgiVT7GcQkLGDe2ev0aWb8zejytzS8wjo7PGEXKqJOrjQ4oORtnimIRZBtw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script>
+    // Initialize AOS
+    AOS.init({
+      once: true,
+      offset: 50,
+    });
+  </script>
+</body>
+
 </html>
